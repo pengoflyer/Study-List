@@ -1,0 +1,8 @@
+{
+  "engine": "cocos-creator-js",
+  "packages": "packages",
+  "name": "tiledMap",
+  "id": "f739b917-757f-4ac5-9426-49423f9eb830",
+  "version": "2.4.9",
+  "isNew": false
+}

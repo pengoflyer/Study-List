@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<body>
+    <div id="root">
+        <h2>{{name}}</h2>
+        <!-- prevent:阻止默认事件 【阻止超链接跳转到百度网页】 -->
+        <a href="http://www.baidu.com" @click.prevent="showInfo"> tip </a>
+    </div>
+</body>
+
+<script>
+    new Vue({
+        el:"#root",
+        data:{
+            name: "event"
+        },
+        methods: {
+            showInfo(){
+                alert('hello event...')
+            }
+        }
+    })
+</script>
+
+</html>
